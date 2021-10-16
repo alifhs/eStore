@@ -10,11 +10,9 @@ const Container = (props) => (
   </div>
 );
 
-
-
 const Arrow = (props) => (
   <div
-    onClick ={props.handleClick}
+    onClick={props.handleClick}
     className={`w-12 z-10 h-12 bg-gray-200 rounded-full absolute ${
       props.direction + "-3"
     } my-auto top-0 bottom-0  flex items-center justify-center cursor-pointer opacity-50`}
@@ -25,7 +23,10 @@ const Arrow = (props) => (
 
 const Wrapper = (props) => (
   <div
-    style={{ transform: `translateX(${props.slideIndex * (-100)}VW)` , transition : 'all 1.5s ease' }}
+    style={{
+      transform: `translateX(${props.slideIndex * -100}VW)`,
+      transition: "all 1.5s ease",
+    }}
     className="h-full  flex bg-gray-200"
   >
     {props.children}
@@ -61,24 +62,28 @@ const Image = (props) => (
 );
 export const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const handleClick = (direction)=> {
-        if(direction === "left") {
-          setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2)
-        } else if(direction === 'right') {
-          setSlideIndex( slideIndex < 2 ? slideIndex + 1 : 0);
-        }
-  }
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else if (direction === "right") {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
   return (
     <Container>
-      <Arrow direction="left" handleClick = {()=> {handleClick("left")} }>
+      <Arrow
+        direction="left"
+        handleClick={() => {
+          handleClick("left");
+        }}
+      >
         <ArrowLeftOutlinedIcon />
       </Arrow>
 
       <Wrapper slideIndex={slideIndex}>
-       
         {sliderItems.map((item, index) => {
           return (
-            <Slide bg={item.bg} key = {item.id}>
+            <Slide bg={item.bg} key={item.id}>
               <ImageContainer>
                 <Image src={item.img} />
               </ImageContainer>
@@ -92,7 +97,12 @@ export const Slider = () => {
         })}
       </Wrapper>
 
-      <Arrow direction="right"  handleClick = {()=> {handleClick("right")} }>
+      <Arrow
+        direction="right"
+        handleClick={() => {
+          handleClick("right");
+        }}
+      >
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
