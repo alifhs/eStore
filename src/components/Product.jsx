@@ -35,7 +35,7 @@ const Container = (props) => {
     <div
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className=" flex-1 m-1 min-w-280 h-96 flex items-center justify-center bg-gray-200 relative"
+      className=" flex-1 m-1 min-w-380 min h-96 flex items-center justify-center bg-gray-200 relative"
     >
       {props.children}
       <Info info={info} />
