@@ -2,6 +2,7 @@ import { Search } from "@material-ui/icons";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import React from "react";
+import './navbar.css'
 // import {Sear} from '@mui/icons-material/Search';
 const Wrapper = (props) => (
   <div className="px-5 flex-1 my-auto flex justify-between items-center">
@@ -29,7 +30,7 @@ const Logo = (props) => (
 const Input = (props) => <input className="border-none" type="text" />;
 
 const MenuItem = (props) => (
-  <div className="text-sm cursor-pointer ml-6">{props.children}</div>
+  <div className="text-sm cursor-pointer ml-6 ">{props.children}</div>
 );
 const SearchContainer = (props) => (
   <div className="border-2 border-solid border-gray-200 flex ml-6 items-center ">
