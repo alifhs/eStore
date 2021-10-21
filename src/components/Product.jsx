@@ -23,7 +23,7 @@ const Info = (props) => {
   );
 };
 const Container = (props) => {
-  const [info, setInfo] = useState(false);
+  const [info, setInfo] = useState(false);  //when hover 
 
   const onMouseEnter = () => {
     setInfo(true);
@@ -35,7 +35,7 @@ const Container = (props) => {
     <div
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      className=" flex-1 m-1 min-w-380 min h-96 flex items-center justify-center bg-gray-200 relative"
+      className=" flex-1 m-1 min-w-350 h-96 flex items-center justify-center bg-gray-200 relative"
     >
       {props.children}
       <Info info={info} />
@@ -64,7 +64,7 @@ export const Product = ({ item }) => {
     <Container>
       <Circle />
       <Image src={item.img} />
-      <Info></Info>
+      {/* <Info></Info> */}
     </Container>
   );
 };

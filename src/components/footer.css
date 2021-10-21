@@ -1,0 +1,9 @@
+
+
+@media only screen and (max-width:380px) {
+    
+    .mobile-footer-container {
+        flex-direction : column;
+    }
+  
+  }

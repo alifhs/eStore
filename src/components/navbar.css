@@ -1,3 +1,31 @@
-.test {
-    background-color: blue;
-}
+
+
+@media only screen and (max-width:380px) {
+    
+    .mobile-nav-container {
+        margin-left : 1px;
+        margin-right: 1px;
+        width : 100%;
+    }
+    .mobile-nav-language {
+        display:none;
+    }
+    .mobile-nav-search-container {
+        margin-left : 0px;
+        width: 25vw;
+    }
+    .mobile-nav-input {
+        width : 80%;
+    }
+
+    .mobile-nav-logo{
+        font-size: 20px;
+    }
+    .mobile-nav-menu-item{
+        margin-left: 3px;
+    }
+    .mobile-nav-container-item {
+        flex : auto;
+        margin-left: 2px;
+    }
+  }

@@ -1,9 +1,10 @@
 import React from 'react'
 import { categories } from '../data/data'
 import { CategoryItem } from './CategoryItem'
+import './categories.css'
 
 const Container = (props) => (
-    <div className="flex p-5 justify-between">
+    <div className="flex p-5 justify-between flex-wrap">
         {props.children}
     </div>
 )
@@ -15,7 +16,7 @@ export const Categories = () => {
         <Container>
            
            {categories.map((item, index) => {
-               return  <CategoryItem item={item} />
+               return  <CategoryItem key={index} item={item} />
            
            })}
          

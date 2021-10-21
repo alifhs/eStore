@@ -4,7 +4,7 @@ import { Product } from './Product'
 
 
 const Container = (props)=> (
-    <div className="p-5 flex flex-wrap ">
+    <div className="flex  justify-between flex-wrap">
         {props.children}
     </div>
 )

@@ -16,23 +16,23 @@ const Title = (props) => (
 )
 
 const Description = (props) => (
-    <div className='text-2xl font-light mb-5'>
+    <div className='text-2xl text-center font-light mb-5'>
             {props.children}
     </div>
 )
 
 const InputContainer = (props)=>(
-    <div className='w-1/2 h-12 border-solid border border-gray-300 flex justify-between mb-5 '>
+    <div className='w-1/2 h-12 border-solid border border-gray-300 flex  mb-5 '>
         {props.children}
     </div>
 )
 
 const Input = (props)=>(
-    <input className='border-none flex-8 pl-2' placeholder={props.placeholder}/>
+    <input className='border-none w-4/5  pl-2' placeholder={props.placeholder}/>
 )
 
 const Button = (props)=>(
-    <button className=' flex-1 border-none bg-green-400 text-white'>
+    <button className=' border-none w-1/5 bg-green-400 text-white'>
         {props.children}
     </button>
 )

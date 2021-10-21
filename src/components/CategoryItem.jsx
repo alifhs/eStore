@@ -1,8 +1,9 @@
 import React from 'react'
+import './categoryitem.css'
 
 
 const Container = (props) => (
-        <div className="flex-1 m-1 relative" >
+        <div className="flex-1 m-1 relative mobile-categoryitem" >
             {props.children}
         </div>
 )

@@ -3,8 +3,9 @@ import RoomIcon from "@mui/icons-material/Room";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import React from "react";
+import './footer.css'
 
-const Container = (props) => <div className="flex ">{props.children}</div>;
+const Container = (props) => <div className="flex mobile-footer-container">{props.children}</div>;
 
 const Left = (props) => (
   <div className="flex-1 flex flex-col p-6">{props.children}</div>
@@ -17,7 +18,7 @@ const SocialContainer = (props) => (
   <div className=" flex ">{props.children}</div>
 );
 const SocialIcon = (props) => (
-  <div className=" w-10 h-10 mr -4 rounded-full flex items-center justify-center cursor-pointer text-white bg-blue-400">
+  <div className=" w-10 h-10 mr-4 rounded-full flex items-center justify-center cursor-pointer text-white bg-blue-400">
     {props.children}
   </div>
 );

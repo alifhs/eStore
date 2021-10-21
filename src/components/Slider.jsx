@@ -3,9 +3,10 @@ import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { useState } from "react";
 import { sliderItems } from "../data/data";
+import './slider.css'
 
 const Container = (props) => (
-  <div className="w-full h-screen relative overflow-hidden ">
+  <div className="w-full h-screen relative overflow-hidden mobile-slider ">
     {props.children}
   </div>
 );
