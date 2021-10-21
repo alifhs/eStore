@@ -4,15 +4,17 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 import './navbar.css'
 // import {Sear} from '@mui/icons-material/Search';
+
+
+const Container = (props) => {
+  return <div style={{  }} className="h-16 flex items-center px-4 bg-white mobile-nav-container">{props.children}</div>;
+};
+
 const Wrapper = (props) => (
   <div className=" flex-1 my-auto flex justify-between items-center ">
     {props.children}
   </div>
 );
-
-const Container = (props) => {
-  return <div style={{  }} className="h-16 flex items-center px-4 bg-white mobile-nav-container">{props.children}</div>;
-};
 const Left = (props) => (
   <div className=" flex-1 flex items-center mobile-nav-container-item "> {props.children}</div>
 );
