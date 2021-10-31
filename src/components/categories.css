@@ -1,9 +1,12 @@
 
 
 
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:660px) {
     
     .mobile-categories {
         flex-wrap: wrap;
+    }
+    .mobile-container {
+        padding: 0px;
     }
   }

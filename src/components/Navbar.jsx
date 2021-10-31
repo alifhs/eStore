@@ -3,7 +3,7 @@ import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 import './navbar.css'
-// import {Sear} from '@mui/icons-material/Search';
+
 
 
 const Container = (props) => {

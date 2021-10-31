@@ -1,11 +1,12 @@
 
 
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:660px) {
     
     .mobile-nav-container {
         margin-left : 1px;
         margin-right: 1px;
         width : 100%;
+        overflow: hidden;
     }
     .mobile-nav-language {
         display:none;

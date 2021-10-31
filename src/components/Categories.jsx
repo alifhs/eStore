@@ -4,7 +4,7 @@ import { CategoryItem } from './CategoryItem'
 import './categories.css'
 
 const Container = (props) => (
-    <div className="flex p-5 justify-between flex-wrap">
+    <div className="flex p-5 justify-between flex-wrap mobile-container">
         {props.children}
     </div>
 )
